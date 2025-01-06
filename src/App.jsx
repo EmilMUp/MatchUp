@@ -1,14 +1,29 @@
-import Navbar from "./components/Navbar"
-import './index.css';  // Importing the global CSS file
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar'; // Import the Navbar component
 
-const App = () => {
-  return (
-    <>
-      <Navbar/>
-    </>
-  
-  )
+// Components for different pages
+function Teams() {
+  return <h2>Home Page</h2>;
 }
 
-export default App
 
+
+// Main App component with routing
+function App() {
+  return (
+    <Router>
+      <div>
+        {/* Include the Navbar */}
+        <Navbar/>
+
+        {/* Define Routes */}
+        <Routes>
+          <Route path="./pages/teams" element={<Teams />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
