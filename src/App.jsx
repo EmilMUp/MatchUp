@@ -1,29 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar'; // Import the Navbar component
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Home from './pages/Home';
+import Teams from './pages/Teams';
+import Contact from './pages/Contact';
+import Navbar from './components/Navbar';
 
-// Components for different pages
-function Teams() {
-  return <h2>Home Page</h2>;
-}
-
-
-
-// Main App component with routing
-function App() {
+const App = () => {
   return (
     <Router>
-      <div>
-        {/* Include the Navbar */}
-        <Navbar/>
-
-        {/* Define Routes */}
+      <Navbar />
         <Routes>
-          <Route path="./pages/teams" element={<Teams />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Teams" element={<Teams />} />
         </Routes>
-      </div>
     </Router>
   );
-}
+};
 
 export default App;

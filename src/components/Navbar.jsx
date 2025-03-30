@@ -1,26 +1,21 @@
-import { X } from '@mui/icons-material';
+// Header.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/Navbar.css'; 
 
-function Navbar() {
+const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="./pages/teams">dfsdada</Link>
-        </li>
-      </ul>
-    </nav>
+    <header className="header">
+      <nav>
+        <ul className="nav-links">
+          <li><Link to="/" className="nav-link">Hem</Link></li>
+          <li><Link to="/Teams" className="nav-link">Teams</Link></li>
+          <li><Link to="/Contact" className="nav-link">Kontakt</Link></li>
+        </ul>
+      </nav>
+    </header>
   );
-}
+};
 
 export default Navbar;
 
-Hyra X
-Parkering X
-Telfefon X
-trängselskatt X
-el X
-internet X
-Bil X
-CSN X

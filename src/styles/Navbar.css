@@ -1,0 +1,26 @@
+/* Header.css */
+.header {
+    background-color: #333;  /* Mörk bakgrundsfärg för headern */
+    padding: 10px 0;  /* Lite padding runt innehållet */
+    color: white; /* Vit textfärg för texten i headern */
+  }
+  
+  .nav-links {
+    list-style-type: none;  /* Tar bort standardpunkter från listan */
+    display: flex;  /* Gör att listan visas horisontellt */
+    justify-content: center;  /* Centrerar länkarna horisontellt */
+  }
+  
+  .nav-links li {
+    margin: 0 15px;  /* Ger ett avstånd mellan varje länk */
+  }
+  
+  .nav-link {
+    text-decoration: none;  /* Tar bort understrykning från länkar */
+    color: white;  /* Länkarna får vit text */
+    font-size: 18px;  /* Sätter storlek på texten */
+  }
+  
+  .nav-link:hover {
+    color: #f0a500;  /* Länkarna får en orange färg när man hovrar över dem */
+  }
