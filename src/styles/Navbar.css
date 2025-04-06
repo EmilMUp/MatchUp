@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Header.css */
 .header {
     background-color: #333;  /* Mörk bakgrundsfärg för headern */
@@ -9,10 +13,12 @@
     list-style-type: none;  /* Tar bort standardpunkter från listan */
     display: flex;  /* Gör att listan visas horisontellt */
     justify-content: center;  /* Centrerar länkarna horisontellt */
+    padding: 0px;
+    margin: 0px;
   }
   
   .nav-links li {
-    margin: 0 15px;  /* Ger ett avstånd mellan varje länk */
+    margin: 0 10px;  /* Ger ett avstånd mellan varje länk */
   }
   
   .nav-link {
