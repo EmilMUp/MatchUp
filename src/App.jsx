@@ -4,17 +4,26 @@ import Main from './components/Main';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer'
 import Cards from './components/Cards'
+import RegisterPage from './Pages/RegisterPage';
 
 const App = () => {
   return (
-    <>
-    <Navbar />
-    <main>
-    <Main />
-    <Cards />
-    </main>
-    <Footer />
-    </>
+  
+    <Router>
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path="/" element={<>
+            <Main />
+            <Cards />
+          </>} />
+          <Route path="/register" element={<RegisterPage />} />
+          {/* Lägg till fler rutter här vid behov */}
+        </Routes>
+      </main>
+      <Footer />
+    </Router>
+    
   );
 };
 

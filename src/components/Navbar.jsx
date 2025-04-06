@@ -1,7 +1,11 @@
 // Header.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import Register from './Register';
+import LoginButton from './LoginButton';
 import '../styles/Navbar.css'; 
+
 
 const Navbar = () => {
   return (
@@ -13,19 +17,10 @@ const Navbar = () => {
         </div>
 
         {/* Links */}
-        <div className="flex items-center space-x-4">
-          <a
-            href="/login"
-            className="text-sm font-medium text-gray-700 hover:text-blue-600 transition"
-          >
-            Logga in
-          </a>
-          <a
-            href="/register"
-            className="text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition px-4 py-2 rounded-md"
-          >
-            Registrera
-          </a>
+         {/* Links */}
+         <div className="flex items-center space-x-4">
+          <Register />
+          <LoginButton />
         </div>
       </div>
     </header>

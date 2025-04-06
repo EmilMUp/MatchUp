@@ -1,4 +1,6 @@
 import React from 'react'
+import Register from './Register';
+import LoginButton from './LoginButton';
 import '../styles/Home.css'; 
 
 const Home = () => {
@@ -20,13 +22,9 @@ const Home = () => {
       </p>
 
       <div className="flex flex-col sm:flex-row gap-6 justify-center">
-        <button className="bg-white text-blue-600 px-8 py-4 rounded-md font-semibold hover:bg-gray-100 transition">
-          Logga in
-        </button>
-        <button className="bg-blue-600 text-white px-8 py-4 rounded-md font-semibold hover:bg-blue-700 transition">
-          Registrera
-        </button>
-      </div>
+      <LoginButton />
+      <Register />
+    </div>  
     </div>
   </section>
   );
