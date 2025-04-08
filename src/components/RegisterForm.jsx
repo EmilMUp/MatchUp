@@ -16,10 +16,26 @@ export default function RegisterForm() {
     });
   };
 
+  const [submitted, setSubmitted] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Registreringsdata:", formData);
-    // Här kan du skicka datan till en server t.ex. med fetch eller axios
+  
+    // Rensa formuläret
+    setFormData({
+      name: "",
+      email: "",
+      password: "",
+      about: "",
+    });
+  
+    // Visa bekräftelse
+    setSubmitted(true);
+  
+    // Dölj efter några sekunder (valfritt)
+    setTimeout(() => {
+      setSubmitted(false);
+    }, 4000); // 4 sekunder
   };
 
   return (
@@ -78,6 +94,12 @@ export default function RegisterForm() {
           Registrera
         </button>
       </form>
+
+      {submitted && (
+        <div className="mt-4 text-green-600 font-semibold bg-green-100 border border-green-300 p-4 rounded-xl">
+            Tack för din registrering! 🎉
+        </div>
+)}
     </div>
   );
 }
