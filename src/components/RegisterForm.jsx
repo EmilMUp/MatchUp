@@ -39,7 +39,7 @@ export default function RegisterForm() {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-2xl shadow-md">
+    <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-2xl shadow-md mt-4 mb-6">
       <h2 className="text-2xl font-bold mb-6 text-center">Registrera dig</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
@@ -96,7 +96,7 @@ export default function RegisterForm() {
       </form>
 
       {submitted && (
-        <div className="mt-4 text-green-600 font-semibold bg-green-100 border border-green-300 p-4 rounded-xl">
+        <div className="mt-6 text-green-600 font-semibold bg-green-100 border border-green-300 p-4 rounded-xl mb-6">
             Tack för din registrering! 🎉
         </div>
 )}

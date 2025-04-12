@@ -5,7 +5,7 @@ import '../styles/Navbar.css';
 const RegisterInfo = () => {
   return (
     
-    <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-2xl shadow-lg flex items-start space-x-4">
+    <div className="max-w-2xl mx-auto mt-8 p-6 bg-white rounded-2xl shadow-lg flex items-start space-x-4">
       <div className="p-3 bg-blue-100 text-blue-600 rounded-full">
       </div>
       <div>
