@@ -1,29 +1,21 @@
 import React from 'react'
+import Users from '../components/Users'
+import Upcoming from '../components/Upcoming';
 
 function LoginPage() {
   return (
-    <div class="flex gap-4 mt-8 mb-8">
-    
-    <div class="w-[30%] p-4 border">
-      <p>Vänster ruta</p>
-    </div>
-    <div class="flex flex-col gap-4 w-[70%]">
-      <h1 class="text-center">Välkommen: Användare</h1>
-      <div class="w-full p-4 mx-auto h-40 border">
-        <p>Element 1: 70% bredd</p>
+    <div className="min-h-screen flex flex-col lg:flex-row bg-gray-100">
+    {/* Vänsterpanel */}
+    <div className="w-full lg:w-1/6 p-6 border-r border-gray-300 bg-white mt-4 mb-4 ml-4 rounded-md">
+      <Users />
       </div>
-      <div class="w-full p-4 mx-auto h-40">
-        <p>Element 2: 70% bredd</p>
-      </div>
-      <div class="w-full p-4 mx-auto h-40">
-        <p>Element 3: 70% bredd</p>
-      </div>
-      <div class="w-full p-4 mx-auto h-40">
-        <p>Element 4: 70% bredd</p>
-      </div>
+    {/* Högersida / huvudinnehåll */}
+    <div className="w-full lg:w-2/3 p-6 flex flex-col items-center justify-center gap-6">
+      <Upcoming />
     </div>
   </div>
-  )
+);
+
 }
 
 export default LoginPage

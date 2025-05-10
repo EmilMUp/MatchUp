@@ -11,9 +11,8 @@ const RegisterInfo = () => {
       <div>
         <h3 className="text-xl font-semibold mb-1">Viktig information</h3>
         <p className="text-gray-600">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-          ullamcorper, libero in tincidunt hendrerit, velit justo dapibus elit,
-          at tempor nunc purus nec eros.
+          När du registerar ditt lag så kommer vi först att kontrollera så att allt stämmer och att det verkligen är du som är ansvarig för laget.
+          Efter det så kommer vi skicka ett mail till dig och du kan logga in och börja att leta efter motståndare.
         </p>
       </div>
     </div>
